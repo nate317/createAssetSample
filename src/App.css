@@ -2,11 +2,13 @@
     font-weight: bold;
     text-align: left;
     display: inline-block;
-    width: 19%
+    width: 19%;
+    height: 30px;
+    margin-top: 7px;
 }
 
 .mainContainer {
-    background:lightgray;
+    background:rgb(230, 232, 235);
     position:absolute;
     top:0px;
     right:0px;
@@ -19,20 +21,19 @@
     font-size: smaller;
 }
 
-.windowView {
-    min-width: 75%;
-    max-width: 75%;
-    box-shadow: #b1b1b1be 0px 3px 3px;
-    height: 60%;
-    float: left;
+.header {
+    height: 0.5em;
+    margin-left: 2em;
 }
 
-.miniWindowView {
-    min-width: 75%;
-    max-width: 75%;
-    box-shadow: #b1b1b1be 0px 3px 3px;
-    height: 57%;
-    float: right;
+.windowView {
+    background-color: #ffffff;
+    min-width: 90%;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: #00000085 2px 8px 8px;
+    height: 50%;
 }
 
 .block {
@@ -45,14 +46,14 @@
 }
 
 .halfArea {
-    height: 250px;
+    height: 225px;
     width: 100%;
+    margin-left: 2em;
 }
 
 .textArea {
     height: 200px;
     width: 90%;
-    margin: 15px;
 }
 
 .floatLeft{
@@ -62,51 +63,24 @@
 
 .floatRight{
     float: right;
-    width: 49%;
+    width: 50%;
+}
+
+.noFloat {
+    float: none;
 }
 
 .submitButtons {
     width: 220px;
-    float: right;
+    float: none;
 }
 
 .floatContainer {
     display: flex;
-    justify-content: center;
+    min-height: 1em;
 }
 
-ul {
-    list-style: none;
-}
-
-li {
-    width: 150px;
-}
-
-.navBar {
-    background-color: teal;
-    color: white;
-    height: 50px;
-    width: 100vw;
-}
-
-.navBar>a {
-    margin: 5px;
-    font-weight: bolder;
-    color: white;
-}
-
-.col-left {
-    width: 20%;
-    border: blue solid 2px;
-}
-
-.col-right {
-    width: 20%;
-    border: blue solid 2px;
-}
-
-.col-mid {
-    width: 60%;
-    border: green solid 2px;
+.required:after {
+    content:" *";
+    color: red;
 }
