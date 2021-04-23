@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+.form-input {
+    font-weight: bold;
+    text-align: left;
+    display: inline-block;
+    width: 19%
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mainContainer {
+    background:lightgray;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    padding-top: 0px;
   }
+
+.p {
+    font-size: smaller;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.windowView {
+    min-width: 75%;
+    max-width: 75%;
+    box-shadow: #b1b1b1be 0px 3px 3px;
+    height: 60%;
+    float: left;
 }
 
-.App-link {
-  color: #61dafb;
+.miniWindowView {
+    min-width: 75%;
+    max-width: 75%;
+    box-shadow: #b1b1b1be 0px 3px 3px;
+    height: 57%;
+    float: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.block {
+    height: 50px;
+}
+
+.halfBlock {
+    height: 50px;
+    width: 100%;
+}
+
+.halfArea {
+    height: 250px;
+    width: 100%;
+}
+
+.textArea {
+    height: 200px;
+    width: 90%;
+    margin: 15px;
+}
+
+.floatLeft{
+    float: left;
+    width: 50%;
+}
+
+.floatRight{
+    float: right;
+    width: 49%;
+}
+
+.submitButtons {
+    width: 220px;
+    float: right;
+}
+
+.floatContainer {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    width: 150px;
+}
+
+.navBar {
+    background-color: teal;
+    color: white;
+    height: 50px;
+    width: 100vw;
+}
+
+.navBar>a {
+    margin: 5px;
+    font-weight: bolder;
+    color: white;
+}
+
+.col-left {
+    width: 20%;
+    border: blue solid 2px;
+}
+
+.col-right {
+    width: 20%;
+    border: blue solid 2px;
+}
+
+.col-mid {
+    width: 60%;
+    border: green solid 2px;
 }
