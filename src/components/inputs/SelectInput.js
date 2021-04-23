@@ -14,6 +14,10 @@ const SelectInput = styled.select`
     :focus {
         outline-color: blue;
     }
+
+    @media only screen and (max-width: 662px) {
+        float: none;
+    }
 `;
 
 export default SelectInput;

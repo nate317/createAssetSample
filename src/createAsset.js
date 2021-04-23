@@ -13,7 +13,7 @@ function CreateAsset() {
   const [useAssetType, setAssetType] = useState('');
   const [useEmployee, setEmployee] = useState('');
   const [useStatus, setStatus] = useState('');
-  const [useSerialNumber, setSerielNumber] = useState('');
+  const [useSerialNumber, setSerialNumber] = useState('');
   const [useExpires, setExpires] = useState('');
   const [useDescription, setDescription] = useState('');
 
@@ -61,7 +61,7 @@ function CreateAsset() {
             <div className="halfBlock">
               <label className="form-input required">Serial Num.</label>
               <TextInput type='text' title='Serial Number' placeholder='' name='priority' value={useSerialNumber}
-                onChange={e => setSerielNumber(e.target.value)} />
+                onChange={e => setSerialNumber(e.target.value)} />
             </div>
             <div className="halfBlock">
               <label className="form-input">Expires</label>
@@ -77,8 +77,8 @@ function CreateAsset() {
             </div>
           </div>
         </div>
-            <div className="">
-              <Button bar type="submit">Create Asset</Button>
+            <div>
+              <Button bar margin3 type="submit">Create Asset</Button>
               <br></br>
               <Button bar primary type="submit">Cancel</Button>
             </div>

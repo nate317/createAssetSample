@@ -8,11 +8,16 @@ const TextInput = styled.input`
     min-height: 30px;
     max-height: 30px;
     min-width: ${props => props.bar ? '80%' : '60%'};
+    max-width: 80%;
     padding: 1px;
     float: right;
 
     :focus {
         outline-color: blue;
+    }
+
+    @media only screen and (max-width: 662px) {
+        float: none;
     }
 `
 export default TextInput;
